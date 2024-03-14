@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timetable</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      padding: 5px;
+      border: 1px solid #ddd;
+    }
+    .time {
+      background-color: #f2f2f2;
+      width: 10%;
+      font-weight: bold;
+      text-align: center;
+    }
+    .subject,
+    .break {
+      font-weight: bold;
+    }
+    .break {
+      text-align: center;
+    }
+    .th-subj {
+      background-color: #f2f2f2;
+      font-weight: bold;
+      text-align: center;
+    }
+    .merged-cell {
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <caption>TIME TABLE FOR UPPER PRIMARY</caption>
+    <thead>
+      <tr>
+        <th class="time" rowspan="2">Time</th>
+        <th colspan="2" rowspan="2">Duration (30m)</th>
+        <th colspan="8" class="th-subj">Period</th>
+      </tr>
+      <tr>
+        <th class="th-subj">0</th>
+        <th class="th-subj">1</th>
+        <th class="th-subj">2</th>
+        <th class="th-subj">3</th>
+        <th class="th-subj">4</th>
+        <th class="th-subj">5</th>
+        <th class="th-subj">6</th>
+        <th class="th-subj">7</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="4" class="time">7:30-8:00<br>8:00-8:30<br>8:30-9:00<br>9:00-9:30</td>
+        <td rowspan="4" colspan="2"></td>
+        <td colspan="4" class="merged-cell" rowspan="2">Assembly & Registration<br>in Class</td>
+        <td colspan="4" rowspan="2">Science</td>
+      </tr>
+      <tr></tr>
+      <tr>
+        <td class="subject">Mathematics</td>
+        <td class="subject">Akuapem Twi</td>
+        <td class="subject">History</td>
+        <td class="subject">Library</td>
+        <td colspan="2" rowspan="2">Science</td>
+      </tr>
+      <tr>
+        <td class="subject">Mathematics</td>
+        <td class="subject">English Language</td>
+        <td class="subject">Computing</td>
+        <td colspan="2" rowspan="2">OWOP</td>
+      </tr>
+      <tr>
+        <td class="break" colspan="8">Break</td>
+      </tr>
+      <tr>
+        <td class="time">9:30-10:00</td>
+        <td colspan="2"></td>
+        <td class="subject">Twi</td>
+        <td class="subject">French</td>
+        <td class="subject">English Language</td>
+        <td colspan="2" rowspan="2">RME</td>
+      </tr>
+      <tr>
+        <td class="time">10:00-10:30</td>
+        <td colspan="2"></td>
+        <td class="subject">Mathematics</td>
+        <td class="subject">History</td>
+        <td class="subject">English Language</td>
+      </tr>
+      <tr>
+        <td class="break" colspan="8">Break</td>
+      </tr>
+      <tr>
+        <td class="time">10:30-11:00</td>
+        <td colspan="2"></td>
+        <td class="subject">French</td>
+        <td class="subject">Twi</td>
+        <td class="subject">English Language</td>
+        <td colspan="2" rowspan="2">OWOP</td>
+      </tr>
+      <tr>
+        <td class="time">11:00-11:30</td>
+        <td colspan="2"></td>
+        <td class="subject">Mathematics</td>
+        <td
